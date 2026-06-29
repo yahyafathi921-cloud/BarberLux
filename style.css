@@ -1,0 +1,394 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Cairo',sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+    color:#fff;
+}
+
+/* Navbar */
+
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#111;
+    z-index:1000;
+    border-bottom:1px solid #d4af37;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo-icon{
+    font-size:32px;
+}
+
+.logo-text{
+    font-size:30px;
+    font-weight:800;
+    color:#d4af37;
+    letter-spacing:2px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+    font-weight:600;
+}
+
+.nav-links a:hover{
+    color:#d4af37;
+}
+
+.menu-btn{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+}
+
+/* Hero */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:120px 20px;
+    background:linear-gradient(
+    rgba(0,0,0,.7),
+    rgba(0,0,0,.7)),
+    url("https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=1200");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-size:60px;
+    color:#d4af37;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    font-size:20px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    background:#d4af37;
+    color:black;
+    text-decoration:none;
+    border-radius:40px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 20px #d4af37;
+}
+
+/* Sections */
+
+section{
+    padding:100px 8%;
+}
+
+section h2{
+    text-align:center;
+    color:#d4af37;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+/* About */
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:2;
+    font-size:18px;
+}
+
+/* Services */
+
+.service-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1b1b1b;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    transition:.4s;
+    border:1px solid transparent;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:#d4af37;
+}
+
+.card h3{
+    color:#d4af37;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+/* Barbers */
+
+.barber-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.barber-card{
+    background:#1b1b1b;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    transition:.4s;
+}
+
+.barber-card:hover{
+    transform:scale(1.05);
+}
+
+.barber-card h3{
+    color:#d4af37;
+    margin-bottom:10px;
+}
+
+/* Gallery */
+
+
+
+/* Prices */
+
+.price-list{
+    max-width:700px;
+    margin:auto;
+}
+
+.price-item{
+    display:flex;
+    justify-content:space-between;
+    padding:20px;
+    background:#1b1b1b;
+    margin-bottom:15px;
+    border-radius:10px;
+}
+
+.price-item span:last-child{
+    color:#d4af37;
+    font-weight:bold;
+}
+
+/* Booking */
+
+#bookingForm{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+#bookingForm input,
+#bookingForm select{
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+}
+
+#bookingForm button{
+    padding:15px;
+    border:none;
+    background:#d4af37;
+    color:black;
+    font-size:18px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/* Reviews */
+
+.review-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.review{
+    background:#1b1b1b;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+}
+
+/* Contact */
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:15px 0;
+}
+
+.socials{
+    margin-top:20px;
+}
+
+.socials a{
+    text-decoration:none;
+    color:#d4af37;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+/* Footer */
+
+footer{
+    background:#111;
+    text-align:center;
+    padding:25px;
+    border-top:1px solid #d4af37;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .navbar{
+        padding:20px;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+}
+
+.gallery-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:15px;
+}
+#loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    color: #d4af37;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    z-index: 9999;
+}
+
+.card,
+.barber-card,
+.review,
+.price-item{
+    box-shadow:0 0 10px rgba(212,175,55,0.1);
+}
+
+.card:hover,
+.barber-card:hover{
+    box-shadow:0 0 25px rgba(212,175,55,0.4);
+}
+
+.whatsapp-float{
+    position:fixed;
+    bottom:20px;
+    left:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    text-decoration:none;
+    z-index:999;
+    box-shadow:0 0 15px rgba(0,0,0,.3);
+}
+
+.card:hover,
+.barber-card:hover{
+    box-shadow:0 0 25px rgba(212,175,55,0.4);
+}
+
+.whatsapp-float{
+    position:fixed;
+    bottom:20px;
+    left:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    text-decoration:none;
+    z-index:999;
+    box-shadow:0 0 15px rgba(0,0,0,.3);
+}
+.hero img{
+    width:300px;
+    border-radius:20px;
+}
