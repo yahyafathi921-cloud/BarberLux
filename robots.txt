@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yahyafathi921-cloud.github.io/BarberLux/sitemap.xml
